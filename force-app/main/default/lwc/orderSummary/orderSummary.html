@@ -1,0 +1,37 @@
+<template>
+    <lightning-card title="Order Summary" icon-name="standard:report">
+
+        <div class="slds-p-around_medium">
+
+            <div class="slds-grid slds-wrap slds-gutters">
+
+                <!-- Total Amount -->
+                <div class="slds-col slds-size_1-of-1 slds-m-bottom_medium">
+                    <div class="summary-box">
+                        <p class="label">Total Amount</p>
+                        <lightning-formatted-number 
+                            value={total}
+                            format-style="currency"
+                            currency-code="USD">
+                        </lightning-formatted-number>
+                    </div>
+                </div>
+
+                <!-- Final Amount -->
+                <div class="slds-col slds-size_1-of-1">
+                    <div class="summary-box highlight">
+                        <p class="label">Final Amount</p>
+                        <lightning-formatted-number 
+                            value={finalAmount}
+                            format-style="currency"
+                            currency-code="USD">
+                        </lightning-formatted-number>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+
+    </lightning-card>
+</template>
