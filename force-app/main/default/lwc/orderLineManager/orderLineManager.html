@@ -1,0 +1,30 @@
+<template>
+    <lightning-card title="Order Line Manager" icon-name="standard:orders">
+
+        <div class="slds-p-around_medium">
+
+            <lightning-combobox
+                label="Product Item"
+                options={productOptions}
+                onchange={handleProductChange}
+                class="slds-m-bottom_small">
+            </lightning-combobox>
+
+            <lightning-input
+                type="number"
+                label="Quantity"
+                value={quantity}
+                onchange={handleQuantityChange}
+                class="slds-m-bottom_small">
+            </lightning-input>
+
+            <lightning-button
+                label="Add Line"
+                variant="brand"
+                onclick={handleAddLine}>
+            </lightning-button>
+
+        </div>
+
+    </lightning-card>
+</template>
