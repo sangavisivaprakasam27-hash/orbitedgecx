@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RecordType xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>student_record</fullName>
+    <active>true</active>
+    <label>student record</label>
+    <picklistValues>
+        <picklist>Course_Type_Copy__c</picklist>
+        <values>
+            <fullName>English</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Social</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Tamil</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Student_category__c</picklist>
+        <values>
+            <fullName>Beginner</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>advanced</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>fresher</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+</RecordType>
